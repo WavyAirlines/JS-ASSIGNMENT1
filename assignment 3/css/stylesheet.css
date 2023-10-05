@@ -1,0 +1,125 @@
+@charset "utf-8";
+html {
+    font-size: 100%;
+}
+h1 {
+text-align: center;
+color: orange;
+font-size: 150px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight:lighter;
+position: relative;
+top: 25px;
+}
+header > p {
+position: relative;
+bottom: 260px;
+left: 375px;
+font-family: monospace;
+}
+img{
+    position: relative;
+    bottom:885px;
+    width:700px ;
+    height:900px
+}
+.liveWell{
+position:relative;
+left: 760px;
+border-top:20px solid #70a62e;
+line-height: 2em;
+}
+[value="11"] > h3 {
+    color: #80a949;
+}
+figure {
+    height: 50px
+}
+figcaption > p {
+    position: relative;
+    bottom: 700px;
+    writing-mode: vertical-rl;
+    right: 30px;
+    transform: rotate(180deg);
+}
+.aside {
+    border: 2px solid #f1b998;
+    Box-shadow: 5px 5px 5px #999;
+    width: fit-content;
+    margin-left: 50px;
+    position: relative;
+
+}
+.as2 > p{
+    text-orientation: vertical;
+}
+li h3, li p{
+    display: inline;
+    margin-right: 10px;
+font-family: Arial, Helvetica, sans-serif;
+}
+[value="12"] > h3 {
+    color: #80a949;
+    margin-bottom: 15px;
+}
+[value="16"] > h3 {
+    color: #80a949;
+}
+[value="20"] > h3 {
+    color: #80a949;
+}
+[value="26"] > h3 {
+    color: #80a949;
+}
+[value="31"] > h3 {
+    color: #d41e6b;
+}
+[value="32"] > h3 {
+    color: #d41e6b;
+}
+[value="36"] > h3 {
+    color: #d41e6b;
+}
+[value="47"] > h3 {
+    color: #039eba;
+}
+[value="49"] > h3 {
+    color: #039eba;
+}
+[value="54"] > h3 {
+    color: #039eba;
+}
+[value="55"] > h3 {
+    color: #039eba;
+}
+[value="56"] > h3 {
+    color: #039eba;
+}
+[value="68"] > h3 {
+    color: #039eba;
+}
+[value="72"] > h3 {
+    color: #039eba;
+}
+[value="76"] > h3 {
+    color: #039eba;
+    padding: 5px;
+}
+footer {
+    float: right;
+}
+footer p small em {
+    color: orange;
+}
+.Style  {
+    position:relative;
+    left: 760px;
+    border-top:20px solid #d41e6b;
+    line-height: 2em;
+}
+.Health {
+    position:relative;
+left: 760px;
+border-top:20px solid #039eba;
+line-height: 2em;
+}

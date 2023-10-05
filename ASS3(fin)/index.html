@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>Smoothie Machine</title>
+</head>
+<body>
+    <h1>Smoothie Machine</h1>
+    <h2>What Flavor of smoothie would you like?</h2>
+    <form id="smoothieForm" onsubmit="return false">
+        <div class="form-group">
+        <!-- I moved the <label> element outside of the <select> element -->
+        <label for="smoothie-flavor">Select a Smoothie Flavor:</label>
+        <select name="smoothie-flavor" id="sFlavor">
+            <!-- <label for="smoothie-flavor">Select a Smoothie Flavor:</label> -->
+            <option value="saltnpepper">--Please Choose An Option--</option>
+            <option value="Banana">Banana</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Mango">Mango</option>
+        </select>
+    </div>
+    <label for="ingredients">What ingredients would you like in your smoothie?</label>
+    <div class="form-group">
+    <input type="checkbox" id="peanut-butter" name="ingredients" value="peanut-butter">
+    <label for="peanut-butter">Peanut Butter</label>
+    </div>
+    <div>
+    <input type="checkbox" id="milk" name="ingredients" value="milk">
+    <label for="milk">milk</label>
+    </div>
+    <div>
+    <input type="checkbox" id="yogurt" name="ingredients" value="yogurt">
+    <label for="yogurt">yogurt</label>
+    </div>
+    <div>
+    <input type="checkbox" id="protein-powder" name="ingredients" value="protein-powder">
+    <label for="protein-powder">protein Powder</label>
+    </div>
+    <div>
+        <label for="Size">What Size Smoothie would you like?</label>
+        <!-- I added an id="size" to the below <select> element to make it easier to grab with JS -->
+        <select name="Size" class="size" id="size">
+            <option value="Large">Large</option>
+            <option value="Medium">Medium</option>
+            <option value="Small">Small</option>
+        </select>
+        </div>
+
+        <button type="submit" value="Order" id="Order">Place Order</button>
+    </form>
+    <!-- We need a place to output the smoothie we ordered -->
+    <p id="output" style="display: hidden"></p>
+</body>
+
+
+
+</html>

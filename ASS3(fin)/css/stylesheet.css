@@ -1,0 +1,12 @@
+@charset "utf-8";
+html {
+    font-family: arial black, arial, sans-serif;
+}
+h1{
+    color:cornflowerblue;
+    text-align: center;
+    box-shadow: inset;
+}
+label {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}

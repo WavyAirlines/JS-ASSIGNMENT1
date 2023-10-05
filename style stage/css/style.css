@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Baloo 2 Regular"), local("Baloo-2-Regular"), url("../../fonts/baloo-2-v1-latin-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Baloo 2 Medium"), local("Baloo-2-Medium"), url("../../fonts/baloo-2-v1-latin-500.woff2") format("woff2");
+  font-display: swap;
+}
+:root {
+  --color-primary: #bc6c25;
+  --color-primary-alt: #dda15e;
+  --color-secondary:#283618 ;
+  --color-background: #606c38;
+  --color-text: #fefae0;
+   --font-family: "grenadine-mvb", sans-serif;
+   --font-family2:"dashiell-text", serif;
+  --font-weight-strong: 500;
+  --font-size-h1: 4rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1.15rem;
+  --border-radius: 8px;
+}
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+html {
+  background-color:var(--color-background) ;
+}
+a {
+  text-decoration: none;
+}
+.container {
+background-color: var(--color-background);
+text-align: center;
+}
+header {
+  font-family: var(--font-family);
+  color: var(--color-primary) ;
+}
+.link-github {
+  text-decoration: none;
+  padding: 3px;
+  border: 3px solid var(--color-primary);
+  background-color: var(--color-primary-alt);
+  width: fit-content;
+  border-radius: 20px 0;
+}
+.link-github:hover {
+  border: 3px solid var(--color-primary-alt);
+  background-color: var(--color-primary);
+  border-radius: 0px 20px;
+  transition: 0.7s;
+}
+h1 {
+  color: var(--color-text);
+  padding: 5px;
+  border-right: 10px solid var(--color-primary-alt);
+  border-top: 10px solid var(--color-primary-alt);
+  border-bottom: 10px solid var(--color-primary);
+  border-left: 10px solid var(--color-primary);
+}
+h1:hover {
+  border-right: 10px solid var(--color-primary);
+  border-top: 10px solid var(--color-primary);
+  border-bottom: 10px solid var(--color-primary-alt);
+  border-left: 10px solid var(--color-primary-alt);
+  transition: 0.7s;
+}
+.skip-link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  position:relative;
+  font-size: 2em;
+}
+.skip-link:hover {
+  color: var(--color-primary);
+  transition: 0.7s;
+}
+header h2 {
+  /* color: var(--color-primary-alt); */
+  position: relative;
+  top: 300px;
+}
+  header h1 {
+    position: relative;
+    font-size: 5em;
+    top: 300px;
+}
+header p {
+  position: relative;
+  top: 300px;
+}
+header {
+  height: 1080px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.link-github svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  fill: currentColor;
+}
+.link-github{
+  position:relative;
+  bottom:50px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color:var(--color-primary-alt) ;
+  padding: 5px;
+  border:5px solid var(--color-secondary);
+}
+
+nav li {
+  flex-basis: calc(70% / 5);
+  font-family: var(--font-family);
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav li:hover {
+  box-shadow: 3px 2px 3px var(--color-secondary);
+  transform: 0.7s;
+}
+
+li a {
+  color: var(--color-text);
+  padding: 10px;
+  display: block;
+}
+#about h2 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+#about {
+  border: 5px solid var(--color-secondary) ;
+  width: 75%;
+  float: right;
+  
+}
+p {
+  font-family: var(--font-family2);
+}
+article ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color:var(--color-text);
+  padding: 20px;
+  list-style: none;
+}
+article li {
+  font-family: var(--font-family);
+  border-right: 3px solid var(--color-primary);
+  border-left: 3px solid var(--color-primary);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+#guidelines {
+  border:5px solid var(--color-secondary);
+  margin-top: 5px;
+  width: 24%;
+  display: flex;
+  position:relative;
+}
+#guidelines h2 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+#contribute {
+  border:5px solid var(--color-secondary);
+  padding: 20px;
+  margin-top:20px;
+line-height: 150%;
+}
+#contribute li {
+  list-style: none;
+  display: flex;
+  justify-content:space-around;
+}
+#contribute h2 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+
+}
+#contribute a {
+  padding: 10px;
+  border-radius: 20px 0;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+#contribute a:hover {
+color: var(--color-secondary);
+background-color:var(--color-text);
+border-radius: 0 20px;
+transition: 0.7s;
+}
+.page-footer a {
+  list-style: none;
+  padding: 10px;
+  border-radius: 20px 0;
+}
+.link-codepen {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+.link-downloadhtml{
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+.link-downloadcss {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+ul {
+  list-style: none;
+}
+#styles h2 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  text-align: center;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+
+}
+.features li {
+  border:5px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 20px 0;
+}
+.features li:hover {
+  border-radius: 0px 20px;
+  transition: 0.7s;
+}
+.link-allstyles {
+padding: 10px;
+border-radius: 10px;
+background-color: var(--color-primary);
+color: var(--color-text);
+}
+.link-allstyles:hover {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  transition: 0.7s;
+}
+#styles {
+  border:5px solid var(--color-secondary);
+  padding: 20px;
+}
